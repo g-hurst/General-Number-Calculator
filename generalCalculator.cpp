@@ -91,7 +91,7 @@ int main() {
             cin >> num2;
             if(!cin)
                 num2 = validateInput();
-            calculation = num1 / num2;
+            calculation = (float)num1 / (float)num2;     //converts data to strings in order to maintain precision when performing calculations.
             outputMessage = to_string(num1) + " / " + to_string(num2) + " = " + to_string(calculation);
         }
 
